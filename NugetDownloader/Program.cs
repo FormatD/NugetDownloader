@@ -73,10 +73,57 @@ namespace NugetDownloader
         {
             var node = new Package();
 
+            RetrieveCatalogAttribute(token, node);
             RetriveNodeAttribute(token, node);
             RetrivePackageAttribute(token, node);
+            RetriveCatalogEntity(token, node);
 
             return node;
+        }
+
+        private void RetriveCatalogEntity(JToken token, Package node)
+        {
+            node.catalogEntry = CreateCatalogEntity(token["catalogEntry"]);
+        }
+
+        private CatalogEntry CreateCatalogEntity(JToken token)
+        {
+            var catalogEntry = new CatalogEntry();
+            RetriveNodeAttribute(token, catalogEntry);
+            catalogEntry.authors = token["authors"].Value<String>();
+            catalogEntry.dependencyGroups = CreateDependenceGroup(token["dependencyGroups"]);
+
+            return catalogEntry;
+        }
+
+        private PackageDependencyGroup CreateDependenceGroup(JToken token)
+        {
+            var dependencyGroup = new PackageDependencyGroup();
+            RetriveNodeAttribute(token, dependencyGroup);
+            dependencyGroup.dependencies = CreateDependences(token["dependencies"] as JArray);
+            return dependencyGroup;
+        }
+
+        private ICollection<PackageDependency> CreateDependences(JArray array)
+        {
+            var dependencies = new List<PackageDependency>();
+            foreach (var token in array)
+            {
+                dependencies.Add(CreateDependence(token));
+            }
+
+            return dependencies;
+        }
+
+        private PackageDependency CreateDependence(JToken token)
+        {
+            var dependency = new PackageDependency();
+            RetriveNodeAttribute(token, dependency);
+
+            dependency.range = token["range"].Value<String>();
+            dependency.registration = token["registration"].Value<String>();
+
+            return dependency;
         }
 
         private Node CreateCatalogPage(JToken token)
@@ -106,10 +153,14 @@ namespace NugetDownloader
             node.items = items.Select(x => Create(x)).ToList();
         }
 
-        private void RetriveNodeAttribute(JToken token, Catalog node)
+        private void RetriveNodeAttribute(JToken token, Node node)
         {
             node.id = token["@id"].Value<String>();
             //node.type = token["@type"].Value<String>();
+        }
+
+        private static void RetrieveCatalogAttribute(JToken token, Catalog node)
+        {
             node.commitId = token["commitId"].Value<String>();
             node.commitTimeStamp = token["commitTimeStamp"].Value<String>();
         }
@@ -167,9 +218,31 @@ namespace NugetDownloader
 
     public class Package : Catalog
     {
-        public string catalogEntry { get; set; }
+        public CatalogEntry catalogEntry { get; set; }
 
         public string packageContent { get; set; }
+
+        public string registration { get; set; }
+
+    }
+
+    public class CatalogEntry : Node
+    {
+        public string authors { get; set; }
+
+        public PackageDependencyGroup dependencyGroups { get; set; }
+
+    }
+
+    public class PackageDependencyGroup : Node
+    {
+        public ICollection<PackageDependency> dependencies { get; set; }
+
+    }
+
+    public class PackageDependency : Node
+    {
+        public string range { get; set; }
 
         public string registration { get; set; }
 
