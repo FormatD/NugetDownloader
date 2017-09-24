@@ -1,0 +1,2450 @@
+{
+    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json",
+    "@type": [
+        "catalog:CatalogRoot",
+        "PackageRegistration",
+        "catalog:Permalink"
+    ],
+    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+    "count": 1,
+    "items": [
+        {
+            "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json#page/3.0.20105.1/6.0.0-rc1-final",
+            "@type": "catalog:CatalogPage",
+            "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+            "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+            "count": 32,
+            "items": [
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/3.0.20105.1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.3.0.20105.1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.3.0.20105.1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.3.0.20105.1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[1.0.20105.408, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.3.0.20105.1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[1.0.20105.408, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetmvc3update-eula.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/3.0.20105.1/microsoft.aspnet.mvc.3.0.20105.1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2012-05-31T16:26:58.347-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "ASP.NET MVC 3",
+                        "version": "3.0.20105.1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/3.0.20105.1/microsoft.aspnet.mvc.3.0.20105.1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/3.0.50813.1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.10/microsoft.aspnet.mvc.3.0.50813.1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.10/microsoft.aspnet.mvc.3.0.50813.1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.10/microsoft.aspnet.mvc.3.0.50813.1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[1.0.20105.408, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.10/microsoft.aspnet.mvc.3.0.50813.1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[1.0.20105.408, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetmvc3update-eula.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/3.0.50813.1/microsoft.aspnet.mvc.3.0.50813.1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-10-14T10:33:43.37-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "ASP.NET MVC 3",
+                        "version": "3.0.50813.1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/3.0.50813.1/microsoft.aspnet.mvc.3.0.50813.1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/4.0.20505.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.4.0.20505.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.4.0.20505.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.4.0.20505.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[2.0.20505, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.01.21.59.44/microsoft.aspnet.mvc.4.0.20505.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[2.0.20505, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/MVC4_prerelease_eula.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.20505/microsoft.aspnet.mvc.4.0.20505.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2012-05-31T16:27:03.393-07:00",
+                        "requireLicenseAcceptance": false,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "Microsoft ASP.NET MVC 4 (RC)",
+                        "version": "4.0.20505"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.20505/microsoft.aspnet.mvc.4.0.20505.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/4.0.20710.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.02.01.58.17/microsoft.aspnet.mvc.4.0.20710.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.02.01.58.17/microsoft.aspnet.mvc.4.0.20710.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.02.01.58.17/microsoft.aspnet.mvc.4.0.20710.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[2.0.20710, 2.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.02.01.58.17/microsoft.aspnet.mvc.4.0.20710.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[2.0.20710, 2.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/MVC_4_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.20710/microsoft.aspnet.mvc.4.0.20710.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2012-08-10T22:12:28.893-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            "Mvc",
+                            "AspNet",
+                            "Microsoft",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC 4",
+                        "version": "4.0.20710"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.20710/microsoft.aspnet.mvc.4.0.20710.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/4.0.30506.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.10.24.30/microsoft.aspnet.mvc.4.0.30506.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.10.24.30/microsoft.aspnet.mvc.4.0.30506.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.10.24.30/microsoft.aspnet.mvc.4.0.30506.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[2.0.20710, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.10.24.30/microsoft.aspnet.mvc.4.0.30506.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[2.0.20710, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/mvc_4_eula_enu.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.30506/microsoft.aspnet.mvc.4.0.30506.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-05-30T16:54:42.163-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            "Mvc",
+                            "Microsoft",
+                            "AspNet",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC 4",
+                        "version": "4.0.30506"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.30506/microsoft.aspnet.mvc.4.0.30506.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/4.0.40804.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.37/microsoft.aspnet.mvc.4.0.40804.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.37/microsoft.aspnet.mvc.4.0.40804.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.37/microsoft.aspnet.mvc.4.0.40804.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[2.0.20710, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.20.37/microsoft.aspnet.mvc.4.0.40804.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[2.0.20710, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/mvc_4_eula_enu.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.40804/microsoft.aspnet.mvc.4.0.40804.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-10-14T10:37:44.533-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            "AspNet",
+                            "Microsoft",
+                            "AspNetMvc",
+                            "Mvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC 4",
+                        "version": "4.0.40804"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/4.0.40804/microsoft.aspnet.mvc.4.0.40804.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.0-beta1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.38.58/microsoft.aspnet.mvc.5.0.0-beta1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.38.58/microsoft.aspnet.mvc.5.0.0-beta1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.38.58/microsoft.aspnet.mvc.5.0.0-beta1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0-beta1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.38.58/microsoft.aspnet.mvc.5.0.0-beta1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0-beta1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/MVC_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-beta1/microsoft.aspnet.mvc.5.0.0-beta1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-06-26T15:35:25.733-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNetMvc",
+                            "Mvc",
+                            "Microsoft",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.0-beta1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-beta1/microsoft.aspnet.mvc.5.0.0-beta1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.0-beta2.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.41.01/microsoft.aspnet.mvc.5.0.0-beta2.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.41.01/microsoft.aspnet.mvc.5.0.0-beta2.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.41.01/microsoft.aspnet.mvc.5.0.0-beta2.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0-beta2, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.12.41.01/microsoft.aspnet.mvc.5.0.0-beta2.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0-beta2, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/MVC_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-beta2/microsoft.aspnet.mvc.5.0.0-beta2.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-06-26T15:47:43.747-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Microsoft",
+                            "AspNetMvc",
+                            "Mvc",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.0-beta2"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-beta2/microsoft.aspnet.mvc.5.0.0-beta2.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.0-rc1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.18.07.55/microsoft.aspnet.mvc.5.0.0-rc1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.18.07.55/microsoft.aspnet.mvc.5.0.0-rc1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.18.07.55/microsoft.aspnet.mvc.5.0.0-rc1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0-rc1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.03.18.07.55/microsoft.aspnet.mvc.5.0.0-rc1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0-rc1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/MVC_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-rc1/microsoft.aspnet.mvc.5.0.0-rc1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-08-23T12:36:29.86-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNet",
+                            "AspNetMvc",
+                            "Microsoft",
+                            "Mvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.0-rc1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0-rc1/microsoft.aspnet.mvc.5.0.0-rc1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.0.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.22.08.40/microsoft.aspnet.mvc.5.0.0.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.22.08.40/microsoft.aspnet.mvc.5.0.0.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.22.08.40/microsoft.aspnet.mvc.5.0.0.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.22.08.40/microsoft.aspnet.mvc.5.0.0.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0/microsoft.aspnet.mvc.5.0.0.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-10-17T08:48:16.01-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNetMvc",
+                            "Mvc",
+                            "AspNet",
+                            "Microsoft"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.0"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.0/microsoft.aspnet.mvc.5.0.0.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.46.12/microsoft.aspnet.mvc.5.0.1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.46.12/microsoft.aspnet.mvc.5.0.1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.46.12/microsoft.aspnet.mvc.5.0.1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0, 3.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.46.12/microsoft.aspnet.mvc.5.0.1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0, 3.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.1/microsoft.aspnet.mvc.5.0.1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-02-13T06:41:31.973-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Mvc",
+                            "Microsoft",
+                            "AspNetMvc",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.1/microsoft.aspnet.mvc.5.0.1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.0.2.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.0.2.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.0.2.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.0.2.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.0.0, 3.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.0.2.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.0.0, 3.1.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.2/microsoft.aspnet.mvc.5.0.2.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-10-14T10:45:23.84-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Mvc",
+                            "AspNetMvc",
+                            "AspNet",
+                            "Microsoft"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.0.2"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.0.2/microsoft.aspnet.mvc.5.0.2.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.1.0-rc1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.08.00.33/microsoft.aspnet.mvc.5.1.0-rc1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.08.00.33/microsoft.aspnet.mvc.5.1.0-rc1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.08.00.33/microsoft.aspnet.mvc.5.1.0-rc1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.1.0-rc1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.08.00.33/microsoft.aspnet.mvc.5.1.0-rc1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.1.0-rc1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://aspnetwebstack.codeplex.com/license",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.0-rc1/microsoft.aspnet.mvc.5.1.0-rc1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2013-12-06T15:09:23.153-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNet",
+                            "Mvc",
+                            "Microsoft",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.1.0-rc1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.0-rc1/microsoft.aspnet.mvc.5.1.0-rc1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.1.0.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.13.55.34/microsoft.aspnet.mvc.5.1.0.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.13.55.34/microsoft.aspnet.mvc.5.1.0.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.13.55.34/microsoft.aspnet.mvc.5.1.0.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.1.0, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.13.55.34/microsoft.aspnet.mvc.5.1.0.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.1.0, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://aspnetwebstack.codeplex.com/license",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.0/microsoft.aspnet.mvc.5.1.0.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-01-17T12:14:17.307-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNet",
+                            "AspNetMvc",
+                            "Microsoft",
+                            "Mvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.1.0"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.0/microsoft.aspnet.mvc.5.1.0.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.1.1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.07.28/microsoft.aspnet.mvc.5.1.1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.07.28/microsoft.aspnet.mvc.5.1.1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.07.28/microsoft.aspnet.mvc.5.1.1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.1.1, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.04.18.07.28/microsoft.aspnet.mvc.5.1.1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.1.1, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.1/microsoft.aspnet.mvc.5.1.1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-02-10T10:08:18.48-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Mvc",
+                            "AspNetMvc",
+                            "Microsoft",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.1.1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.1/microsoft.aspnet.mvc.5.1.1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.1.2.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.03.22.30/microsoft.aspnet.mvc.5.1.2.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.03.22.30/microsoft.aspnet.mvc.5.1.2.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.03.22.30/microsoft.aspnet.mvc.5.1.2.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.1.2, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.03.22.30/microsoft.aspnet.mvc.5.1.2.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.1.2, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.2/microsoft.aspnet.mvc.5.1.2.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-04-04T07:20:52.837-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Mvc",
+                            "Microsoft",
+                            "AspNetMvc",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.1.2"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.2/microsoft.aspnet.mvc.5.1.2.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.1.3.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.1.3.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.1.3.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.1.3.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.1.2, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.16.21.04/microsoft.aspnet.mvc.5.1.3.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.1.2, 3.2.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.3/microsoft.aspnet.mvc.5.1.3.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-10-14T10:50:33.037-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNet",
+                            "Microsoft",
+                            "Mvc",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.1.3"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.1.3/microsoft.aspnet.mvc.5.1.3.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.0-rc.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.11.45.17/microsoft.aspnet.mvc.5.2.0-rc.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.11.45.17/microsoft.aspnet.mvc.5.2.0-rc.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.11.45.17/microsoft.aspnet.mvc.5.2.0-rc.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.0-rc, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.11.45.17/microsoft.aspnet.mvc.5.2.0-rc.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.0-rc, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.0-rc/microsoft.aspnet.mvc.5.2.0-rc.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-05-27T11:28:34.857-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNetMvc",
+                            "Mvc",
+                            "AspNet",
+                            "Microsoft"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.0-rc"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.0-rc/microsoft.aspnet.mvc.5.2.0-rc.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.0.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.18.46.41/microsoft.aspnet.mvc.5.2.0.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.18.46.41/microsoft.aspnet.mvc.5.2.0.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.18.46.41/microsoft.aspnet.mvc.5.2.0.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.0, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.05.18.46.41/microsoft.aspnet.mvc.5.2.0.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.0, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.0/microsoft.aspnet.mvc.5.2.0.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-07-01T14:32:27.507-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNetMvc",
+                            "Microsoft",
+                            "AspNet",
+                            "Mvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.0"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.0/microsoft.aspnet.mvc.5.2.0.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.2-rc.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.05.10.53/microsoft.aspnet.mvc.5.2.2-rc.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.05.10.53/microsoft.aspnet.mvc.5.2.2-rc.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.05.10.53/microsoft.aspnet.mvc.5.2.2-rc.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.2-rc, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.05.10.53/microsoft.aspnet.mvc.5.2.2-rc.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.2-rc, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.2-rc/microsoft.aspnet.mvc.5.2.2-rc.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-08-22T18:31:51-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Microsoft",
+                            "Mvc",
+                            "AspNet",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.2-rc"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.2-rc/microsoft.aspnet.mvc.5.2.2-rc.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.2.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.06.32.24/microsoft.aspnet.mvc.5.2.2.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.06.32.24/microsoft.aspnet.mvc.5.2.2.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.06.32.24/microsoft.aspnet.mvc.5.2.2.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.2, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.06.06.32.24/microsoft.aspnet.mvc.5.2.2.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.2, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.2/microsoft.aspnet.mvc.5.2.2.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-08-28T09:25:41.887-07:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Microsoft",
+                            "AspNetMvc",
+                            "Mvc",
+                            "AspNet"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.2"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.2/microsoft.aspnet.mvc.5.2.2.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.3-beta1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.09.21.43/microsoft.aspnet.mvc.5.2.3-beta1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.09.21.43/microsoft.aspnet.mvc.5.2.3-beta1.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.09.21.43/microsoft.aspnet.mvc.5.2.3-beta1.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.3-beta1, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.07.09.21.43/microsoft.aspnet.mvc.5.2.3-beta1.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.3-beta1, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3-beta1/microsoft.aspnet.mvc.5.2.3-beta1.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2014-12-17T10:27:15.37-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "AspNetMvc",
+                            "Microsoft",
+                            "AspNet",
+                            "Mvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.3-beta1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3-beta1/microsoft.aspnet.mvc.5.2.3-beta1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/5.2.3.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.12.00.46.46/microsoft.aspnet.mvc.5.2.3.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.12.00.46.46/microsoft.aspnet.mvc.5.2.3.json#dependencygroup",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.12.00.46.46/microsoft.aspnet.mvc.5.2.3.json#dependencygroup/microsoft.aspnet.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Razor",
+                                        "range": "[3.2.3, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2015.02.12.00.46.46/microsoft.aspnet.mvc.5.2.3.json#dependencygroup/microsoft.aspnet.webpages",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.WebPages",
+                                        "range": "[3.2.3, 3.3.0)",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.webpages/index.json"
+                                    }
+                                ]
+                            }
+                        ],
+                        "description": "This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "en-US",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm",
+                        "listed": true,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
+                        "projectUrl": "http://www.asp.net/mvc",
+                        "published": "2015-02-09T12:06:02.257-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "This package contains the runtime assemblies for ASP.NET MVC.",
+                        "tags": [
+                            "Microsoft",
+                            "Mvc",
+                            "AspNet",
+                            "AspNetMvc"
+                        ],
+                        "title": "Microsoft ASP.NET MVC",
+                        "version": "5.2.3"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/5.2.3/microsoft.aspnet.mvc.5.2.3.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta1.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json#dependencygroup/asp.netcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json#dependencygroup/asp.netcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json#dependencygroup/asp.netcore5.0/system.xml.xmldocument",
+                                        "@type": "PackageDependency",
+                                        "id": "System.Xml.XmlDocument",
+                                        "range": "[4.0.0-beta-22231, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/system.xml.xmldocument/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.NetCore5.0"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json#dependencygroup/asp.net5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta1.json#dependencygroup/asp.net5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta1, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.Net5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta1/microsoft.aspnet.mvc.6.0.0-beta1.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "Microsoft.AspNet.Mvc",
+                        "version": "6.0.0-beta1"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta1/microsoft.aspnet.mvc.6.0.0-beta1.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta2.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta2.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta2.json#dependencygroup/asp.net5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta2.json#dependencygroup/asp.net5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta2, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.Net5.0"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta2.json#dependencygroup/asp.netcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta2.json#dependencygroup/asp.netcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta2, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.NetCore5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta2/microsoft.aspnet.mvc.6.0.0-beta2.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "Microsoft.AspNet.Mvc",
+                        "version": "6.0.0-beta2"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta2/microsoft.aspnet.mvc.6.0.0-beta2.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta3.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.netcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.netcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta3, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.netcore5.0/microsoft.framework.cache.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Cache.Memory",
+                                        "range": "[1.0.0-beta3, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.cache.memory/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.NetCore5.0"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.net5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.net5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta3, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta3.json#dependencygroup/asp.net5.0/microsoft.framework.cache.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Cache.Memory",
+                                        "range": "[1.0.0-beta3, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.cache.memory/index.json"
+                                    }
+                                ],
+                                "targetFramework": "Asp.Net5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta3/microsoft.aspnet.mvc.6.0.0-beta3.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "Microsoft.AspNet.Mvc",
+                        "version": "6.0.0-beta3"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta3/microsoft.aspnet.mvc.6.0.0-beta3.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta4.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnx4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnx4.5.1/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnx4.5.1/microsoft.aspnet.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Cors",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnx4.5.1/microsoft.aspnet.authorization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Authorization",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.authorization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNX4.5.1"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnxcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnxcore5.0/microsoft.aspnet.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Cors",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnxcore5.0/microsoft.aspnet.authorization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Authorization",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.authorization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta4.json#dependencygroup/dnxcore5.0/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta4, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNXCore5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta4/microsoft.aspnet.mvc.6.0.0-beta4.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-beta4"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta4/microsoft.aspnet.mvc.6.0.0-beta4.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta5.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.aspnet.authorization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Authorization",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.authorization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.aspnet.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Cors",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNX4.5.1"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.aspnet.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Cors",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.aspnet.authorization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Authorization",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.authorization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.48.48/microsoft.aspnet.mvc.6.0.0-beta5.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta5, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNXCore5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta5/microsoft.aspnet.mvc.6.0.0-beta5.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-beta5"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta5/microsoft.aspnet.mvc.6.0.0-beta5.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta6.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNXCore5.0"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta6.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta6, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNX4.5.1"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta6/microsoft.aspnet.mvc.6.0.0-beta6.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-beta6"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta6/microsoft.aspnet.mvc.6.0.0-beta6.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta7.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNXCore5.0"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta7.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta7, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNX4.5.1"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta7/microsoft.aspnet.mvc.6.0.0-beta7.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-beta7"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta7/microsoft.aspnet.mvc.6.0.0-beta7.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-beta8.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnx4.5.1/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNX4.5.1"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.framework.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.Caching.Memory",
+                                        "range": "[1.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.framework.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Framework.DependencyInjection",
+                                        "range": "[1.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.framework.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-beta8.json#dependencygroup/dnxcore5.0/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-beta8, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    }
+                                ],
+                                "targetFramework": "DNXCore5.0"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta8/microsoft.aspnet.mvc.6.0.0-beta8.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-beta8"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-beta8/microsoft.aspnet.mvc.6.0.0-beta8.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                },
+                {
+                    "@id": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/6.0.0-rc1-final.json",
+                    "@type": "Package",
+                    "commitId": "3ccb7d24-6efe-414d-bef6-53d5ee75777b",
+                    "commitTimeStamp": "2017-07-20T01:22:18.522153Z",
+                    "catalogEntry": {
+                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json",
+                        "@type": "PackageDetails",
+                        "authors": "Microsoft",
+                        "dependencyGroups": [
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.extensions.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Extensions.DependencyInjection",
+                                        "range": "[1.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.extensions.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.extensions.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Extensions.Caching.Memory",
+                                        "range": "[1.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.extensions.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netplatform5.4/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    }
+                                ],
+                                "targetFramework": ".NETPlatform5.4"
+                            },
+                            {
+                                "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1",
+                                "@type": "PackageDependencyGroup",
+                                "dependencies": [
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.razor",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Razor",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.razor/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.extensions.dependencyinjection",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Extensions.DependencyInjection",
+                                        "range": "[1.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.extensions.dependencyinjection/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.viewfeatures",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ViewFeatures",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.viewfeatures/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.apiexplorer",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.ApiExplorer",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.apiexplorer/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.formatters.json",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Formatters.Json",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.formatters.json/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.localization",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Localization",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.localization/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.extensions.caching.memory",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.Extensions.Caching.Memory",
+                                        "range": "[1.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.extensions.caching.memory/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.dataannotations",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.DataAnnotations",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.dataannotations/index.json"
+                                    },
+                                    {
+                                        "@id": "https://nuget.cnblogs.com/v3/catalog0/data/2016.12.29.23.49.13/microsoft.aspnet.mvc.6.0.0-rc1-final.json#dependencygroup/.netframework4.5.1/microsoft.aspnet.mvc.cors",
+                                        "@type": "PackageDependency",
+                                        "id": "Microsoft.AspNet.Mvc.Cors",
+                                        "range": "[6.0.0-rc1-final, )",
+                                        "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc.cors/index.json"
+                                    }
+                                ],
+                                "targetFramework": ".NETFramework4.5.1"
+                            }
+                        ],
+                        "description": "ASP.NET MVC is a web framework that gives you a powerful, patterns-based way to build dynamic websites and Web APIs. ASP.NET MVC enables a clean separation of concerns and gives you full control over markup.",
+                        "iconUrl": "http://go.microsoft.com/fwlink/?LinkID=288859",
+                        "id": "Microsoft.AspNet.Mvc",
+                        "language": "",
+                        "licenseUrl": "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm",
+                        "listed": false,
+                        "minClientVersion": "",
+                        "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-rc1-final/microsoft.aspnet.mvc.6.0.0-rc1-final.nupkg",
+                        "projectUrl": "http://www.asp.net/",
+                        "published": "1899-12-31T16:00:00-08:00",
+                        "requireLicenseAcceptance": true,
+                        "summary": "",
+                        "tags": [
+                            ""
+                        ],
+                        "title": "",
+                        "version": "6.0.0-rc1-final"
+                    },
+                    "packageContent": "https://nuget.cnblogs.com/v3-flatcontainer/microsoft.aspnet.mvc/6.0.0-rc1-final/microsoft.aspnet.mvc.6.0.0-rc1-final.nupkg",
+                    "registration": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json"
+                }
+            ],
+            "parent": "https://nuget.cnblogs.com/v3/registration3/microsoft.aspnet.mvc/index.json",
+            "lower": "3.0.20105.1",
+            "upper": "6.0.0-rc1-final"
+        }
+    ],
+    "@context": {
+        "@vocab": "http://schema.nuget.org/schema#",
+        "catalog": "http://schema.nuget.org/catalog#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "items": {
+            "@id": "catalog:item",
+            "@container": "@set"
+        },
+        "commitTimeStamp": {
+            "@id": "catalog:commitTimeStamp",
+            "@type": "xsd:dateTime"
+        },
+        "commitId": {
+            "@id": "catalog:commitId"
+        },
+        "count": {
+            "@id": "catalog:count"
+        },
+        "parent": {
+            "@id": "catalog:parent",
+            "@type": "@id"
+        },
+        "tags": {
+            "@container": "@set",
+            "@id": "tag"
+        },
+        "packageTargetFrameworks": {
+            "@container": "@set",
+            "@id": "packageTargetFramework"
+        },
+        "dependencyGroups": {
+            "@container": "@set",
+            "@id": "dependencyGroup"
+        },
+        "dependencies": {
+            "@container": "@set",
+            "@id": "dependency"
+        },
+        "packageContent": {
+            "@type": "@id"
+        },
+        "published": {
+            "@type": "xsd:dateTime"
+        },
+        "registration": {
+            "@type": "@id"
+        }
+    }
+}
