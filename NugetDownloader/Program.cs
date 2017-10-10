@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using ICSharpCode.SharpZipLib.Zip;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -11,27 +13,98 @@ namespace NugetDownloader
     class Program
     {
 
-        private string rootUrl = "https://nuget.cnblogs.com/v3";
-        private static string _packageIndexTemplate = "https://nuget.cnblogs.com/v3/registration3/{0}/index.json";
-
         static void Main(string[] args)
         {
-            args = new string[] { "MICROSOFT.ASPNET.MVC".ToLower() };
+            const string packageName = "microsoft.aspnet.mvc";
+            args = new string[] { packageName };
 
-            var packageName = args.FirstOrDefault();
-            var xx = new WebClient();
-            var jsonString = xx.DownloadString(string.Format(_packageIndexTemplate, packageName));
-            var json = (JObject)JsonConvert.DeserializeObject(jsonString);
+            var downloader = new Downloader();
+            var package = downloader.GetPackage(packageName, "");
 
-            var node = new Creator().Create(json);
+            var urls = downloader.AnalysisAllDownloadAddress(package).Distinct().ToList();
 
-            var package = GetPackage(node);
-            var content = package.packageContent;
-            xx.DownloadFile(content, "xx.zip");
+            var files = downloader.Download(urls);
+            var zipFile = $"{packageName}.zip";
+            downloader.Pack(files, zipFile);
 
+
+            Console.ReadKey();
         }
 
-        private static Package GetPackage(Node node)
+    }
+
+    public class Downloader
+    {
+        private static string _packageIndexTemplate = "https://nuget.cnblogs.com/v3/registration3/{0}/index.json";
+        private static WebClient _client = new WebClient();
+        private string _downloadFolder = "packages";
+
+        public Package GetPackage(string packageName, string versionRange)
+        {
+            packageName = packageName?.ToLower();
+            var jsonString = _client.DownloadString(string.Format(_packageIndexTemplate, packageName));
+            var json = (JObject)JsonConvert.DeserializeObject(jsonString);
+
+            var root = new Creator().Create(json) as RootCatalog;
+
+            var package = GetPackage(root);
+            // xx.DownloadFile(content, "xx.zip");
+            return package;
+        }
+
+        public IEnumerable<string> AnalysisAllDownloadAddress(Package package)
+        {
+            yield return package.packageContent;
+            foreach (var group in package.catalogEntry?.dependencyGroups?.SelectMany(x => x.dependencies) ?? new List<PackageDependency>())
+            {
+                if (group == null)
+                    continue;
+
+                var dependencePackage = GetPackage(group.packageName, group.range);
+                foreach (var packageUrl in AnalysisAllDownloadAddress(dependencePackage))
+                {
+                    yield return packageUrl;
+                }
+            }
+        }
+
+        public IEnumerable<String> Download(IEnumerable<String> nugetPackageUrls)
+        {
+            if (!Directory.Exists(_downloadFolder))
+                Directory.CreateDirectory(_downloadFolder);
+
+            foreach (var url in nugetPackageUrls)
+            {
+                var savePath = Path.Combine(_downloadFolder, Path.GetFileName(url));
+                Console.WriteLine($"Downloading {url} to {savePath}");
+                _client.DownloadFile(url, savePath);
+                yield return savePath;
+            }
+        }
+
+        public void Pack(IEnumerable<String> files, string zipFile)
+        {
+            var folder = GetTempPath();
+            Directory.CreateDirectory(folder);
+            foreach (var file in files)
+            {
+                File.Copy(file, Path.Combine(folder, Path.GetFileName(file)));
+            }
+
+            var zip = new FastZip();
+
+            zip.CreateZip(zipFile, folder, true, "");
+        }
+
+        private static string GetTempPath()
+        {
+            var tmpdir = Path.GetTempFileName();
+            File.Delete(tmpdir);
+
+            return tmpdir;
+        }
+
+        public static Package GetPackage(Node node)
         {
             if (node is Package)
                 return (Package)node;
@@ -45,6 +118,7 @@ namespace NugetDownloader
 
             return null;
         }
+
     }
 
     public class Creator
@@ -96,16 +170,32 @@ namespace NugetDownloader
             return catalogEntry;
         }
 
-        private PackageDependencyGroup CreateDependenceGroup(JToken token)
+        private List<PackageDependencyGroup> CreateDependenceGroup(JToken token)
         {
-            var dependencyGroup = new PackageDependencyGroup();
-            RetriveNodeAttribute(token, dependencyGroup);
-            dependencyGroup.dependencies = CreateDependences(token["dependencies"] as JArray);
-            return dependencyGroup;
+            var groups = new List<PackageDependencyGroup>();
+
+            var jArray = token as JArray;
+            if (jArray == null || jArray.Count == 0)
+            {
+                return groups;
+            }
+
+            foreach (var item in jArray)
+            {
+                var dependencyGroup = new PackageDependencyGroup();
+                var dendenceGroup = jArray.First;
+                RetriveNodeAttribute(dendenceGroup, dependencyGroup);
+                dependencyGroup.dependencies = CreateDependences(dendenceGroup["dependencies"] as JArray);
+                groups.Add(dependencyGroup);
+            }
+
+            return groups;
         }
 
         private ICollection<PackageDependency> CreateDependences(JArray array)
         {
+            if (array == null)
+                return null;
             var dependencies = new List<PackageDependency>();
             foreach (var token in array)
             {
@@ -120,6 +210,8 @@ namespace NugetDownloader
             var dependency = new PackageDependency();
             RetriveNodeAttribute(token, dependency);
 
+
+            dependency.packageName = token["id"].Value<String>();
             dependency.range = token["range"].Value<String>();
             dependency.registration = token["registration"].Value<String>();
 
@@ -137,7 +229,7 @@ namespace NugetDownloader
             return node;
         }
 
-        private Node CreateRoot(JToken token)
+        private RootCatalog CreateRoot(JToken token)
         {
             var node = new RootCatalog();
             RetriveNodeAttribute(token, node);
@@ -186,6 +278,11 @@ namespace NugetDownloader
 
         public string type { get; set; }
 
+        public override string ToString()
+        {
+            return $"{type}:{id}";
+        }
+
     }
 
     public class Catalog : Node
@@ -214,6 +311,7 @@ namespace NugetDownloader
         public string upper { get; set; }
 
         public string parent { get; set; }
+
     }
 
     public class Package : Catalog
@@ -230,7 +328,7 @@ namespace NugetDownloader
     {
         public string authors { get; set; }
 
-        public PackageDependencyGroup dependencyGroups { get; set; }
+        public List<PackageDependencyGroup> dependencyGroups { get; set; }
 
     }
 
@@ -242,9 +340,15 @@ namespace NugetDownloader
 
     public class PackageDependency : Node
     {
+        internal string packageName { get; set; }
+
         public string range { get; set; }
 
         public string registration { get; set; }
 
+        public override string ToString()
+        {
+            return $"{packageName}({range})";
+        }
     }
 }

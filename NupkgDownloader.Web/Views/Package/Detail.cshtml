@@ -1,0 +1,72 @@
+﻿@model NupkgDownloader.Web.Models.PackageViewModel
+
+@{
+    ViewData["Title"] = Model.Id;
+}
+
+<h2>@Model.Id</h2>
+
+<div>
+    <h4>@Model.Title</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tags)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Summary)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Summary)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RequireLicenseAcceptance)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RequireLicenseAcceptance)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Owners)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Owners)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Published)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Published)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IsListed)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsListed)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DownloadCount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DownloadCount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authors)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authors)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

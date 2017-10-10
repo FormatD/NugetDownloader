@@ -1,0 +1,58 @@
+﻿@model NupkgDownloader.Web.Models.SearchResultViewModel
+@{
+    ViewData["Title"] = "Query";
+}
+
+<style>
+    .table tbody td img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+</style>
+<h2>Query</h2>
+
+@using (Html.BeginForm(FormMethod.Get))
+{
+
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <input class="form-control" type="text" name="keyword" value="@Model.Keyword" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <input class="btn btn-primary" type="submit" value="Query" />
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>DownloadCount</th>
+                <th>Description</th>
+                <th>Authors</th>
+                <th>Tags</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Result)
+                {
+                <tr>
+                    <td><img src="@item.IconUrl" /></td>
+                    <td>@item.Title</td>
+                    <td>@item.DownloadCount</td>
+                    <td>@item.Description</td>
+                    <td>@item.Authors</td>
+                    <td>@item.Tags</td>
+                    <td>
+                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                        <a asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@item.Id" asp-route-email="dengqianjun@huawei.com">Mail</a>
+                        <a asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@item.Id" asp-route-versionNo="123">Download</a>
+                        <a target="_blank" href="@item.ProjectUrl">Project</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

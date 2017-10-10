@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  nupkgdownloader.web:
+    image: nupkgdownloader.web
+    build:
+      context: ./NupkgDownloader.Web
+      dockerfile: Dockerfile
