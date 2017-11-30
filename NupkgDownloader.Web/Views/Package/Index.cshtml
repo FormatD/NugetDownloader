@@ -30,28 +30,25 @@
                 <th>Title</th>
                 <th>DownloadCount</th>
                 <th>Description</th>
-                <th>Authors</th>
-                <th>Tags</th>
             </tr>
         </thead>
         <tbody>
-
             @foreach (var item in Model.Result)
                 {
                 <tr>
-                    <td><img src="@item.IconUrl" /></td>
-                    <td>@item.Title</td>
-                    <td>@item.DownloadCount</td>
-                    <td>@item.Description</td>
-                    <td>@item.Authors</td>
-                    <td>@item.Tags</td>
-                    <td>
-                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
-                        <a asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@item.Id" asp-route-email="dengqianjun@huawei.com">Mail</a>
-                        <a asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@item.Id" asp-route-versionNo="123">Download</a>
-                        <a target="_blank" href="@item.ProjectUrl">Project</a>
-                    </td>
-                </tr>
+                <td><img src="@item.IconUrl" /></td>
+                <td>
+                    <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">@item.Title</a>
+                </td>
+                <td>@item.DownloadCount</td>
+                <td>@item.Description</td>
+                <td>
+                    <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
+                    <a asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@item.Id">Send via Email</a>
+                    <a asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@item.Id" asp-route-versionNo="123">Download</a>
+                    <a target="_blank" href="@item.ProjectUrl">Project</a>
+                </td>
+            </tr>
             }
         </tbody>
     </table>

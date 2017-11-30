@@ -15,6 +15,9 @@ using System.IO;
 using NuGet.Packaging.Core;
 //using ILogger = Microsoft.Extensions.Logging.ILogger;
 using Microsoft.Extensions.Logging;
+using System.Reflection;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace NupkgDownloader.Web.Controllers
 {
@@ -22,10 +25,12 @@ namespace NupkgDownloader.Web.Controllers
     {
         Logger<PackageController> _nugetLogger;
         private readonly ILogger<PackageController> _logger;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public PackageController(ILogger<PackageController> logger)
+        public PackageController(UserManager<ApplicationUser> userManager, ILogger<PackageController> logger)
         {
             _logger = logger;
+            _userManager = userManager;
             _nugetLogger = new Logger<PackageController>(_logger);
         }
 
@@ -77,8 +82,8 @@ namespace NupkgDownloader.Web.Controllers
                 ReleatedPackages = reletedPackages
             };
 
-            var xxResource = sourceRepository.GetResource<DownloadResource>();
-            var downloadRsult = await xxResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), "test", _nugetLogger, CancellationToken.None);
+            //var xxResource = sourceRepository.GetResource<DownloadResource>();
+            //var downloadRsult = await xxResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), "test", _nugetLogger, CancellationToken.None);
             return View(pacakgeViewModel);
         }
 
@@ -87,6 +92,7 @@ namespace NupkgDownloader.Web.Controllers
             return await metadataResource.GetLatestVersion(id, false, false, _nugetLogger, CancellationToken.None);
         }
 
+        [Authorize]
         async public Task<IActionResult> Download(string id, string versionNo = null)
         {
             SourceRepository sourceRepository = CreateRepository();
@@ -103,8 +109,10 @@ namespace NupkgDownloader.Web.Controllers
             return File(downloadRsult.PackageStream, "application/x-nuget", $"{id}.{version}.nupkg");
         }
 
+        [Authorize]
         async public Task<IActionResult> Send(string id, string versionNo = null, string email = null)
         {
+            _logger.LogInformation("Sending {0}.", id);
             SourceRepository sourceRepository = CreateRepository();
             var metadataResource = await sourceRepository.GetResourceAsync<MetadataResource>();
             var version = !string.IsNullOrWhiteSpace(versionNo) ? new NuGetVersion(versionNo) : await GetVersion(id, metadataResource);
@@ -126,10 +134,16 @@ namespace NupkgDownloader.Web.Controllers
                 UserPass = "hiwdgwugswpybhfg"
             };
 
-            if (string.IsNullOrWhiteSpace(email))
-                config.SendTo = email;
+            var user = await _userManager.GetUserAsync(HttpContext.User);
+            if (user == null || string.IsNullOrWhiteSpace(user.Email))
+                config.SendTo = user.Email;
 
-            new MailSender(config, _logger).SendEmail(Path.Combine("test", id, version.ToString(), $"{id}.{version}.nupkg"));
+            _logger.LogInformation("Sending {0} to {1}.", id, email);
+            //var basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+
+            var lowCaseId = id.ToLower();
+            new MailSender(config, _logger).SendEmail(Path.Combine("test", lowCaseId, version.ToString(), $"{lowCaseId}.{version}.nupkg"), $"[Nuget]{lowCaseId} {version}");
+            _logger.LogInformation("package sended.");
             return View(new SendViewModel
             {
                 Id = id,

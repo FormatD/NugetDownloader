@@ -1,72 +1,97 @@
 ﻿@model NupkgDownloader.Web.Models.PackageViewModel
-
 @{
     ViewData["Title"] = Model.Id;
 }
 
-<h2>@Model.Id</h2>
-
 <div>
-    <h4>@Model.Title</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Tags)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Tags)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Summary)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Summary)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.RequireLicenseAcceptance)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.RequireLicenseAcceptance)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Owners)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Owners)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Published)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Published)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.IsListed)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.IsListed)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.DownloadCount)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.DownloadCount)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Authors)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Authors)
-        </dd>
-    </dl>
+    <div class="row">
+        <h3>
+            <span>@Model.Id</span>
+            <span class="alert-info">@Model.CurrentVersion</span>
+        </h3>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Tags)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Tags)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Summary)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Summary)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.RequireLicenseAcceptance)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.RequireLicenseAcceptance)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Owners)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Owners)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Published)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Published)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.IsListed)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.IsListed)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.DownloadCount)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.DownloadCount)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Authors)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Authors)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-3">
+            <img src="@Model.IconUrl" />
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <a class="btn btn-primary" asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-envelope"></span>Send via Email</a>
+        <a class="btn btn-primary" asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-download-alt"></span>Download</a>
+    </div>
+    <div class="row">
+        <span>Other Versions</span>
+        <div class="pre-scrollable">
+            <ul class="list-group">
+                @foreach (var item in Model.ReleatedPackages)
+                {
+                    <li class="list-group-item">
+                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Identity.Id" asp-route-versionNo="@item.Identity.Version">@item.Identity</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
 </div>
 <div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
     <a asp-action="Index">Back to List</a>
 </div>

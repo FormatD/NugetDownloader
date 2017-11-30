@@ -35,6 +35,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Package" asp-action="Index">Packages</a></li>
                 </ul>
+                @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
     </nav>
@@ -43,6 +44,7 @@
         <hr />
         <footer>
             <p>&copy; 2017 - NupkgDownloader.Web</p>
+            <p>蜀ICP备15010732号-1</p>   
         </footer>
     </div>
 
