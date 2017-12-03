@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MailUtility\MailUtility.csproj" />
+    <ProjectReference Include="..\MailUtility\MailUtility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
