@@ -21,6 +21,13 @@
     <Compile Remove="Models\SourceRepositoryExtensions.cs" />
     <Compile Remove="SearchResult.cs" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0" PrivateAssets="All" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
@@ -48,6 +55,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="db.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="robots.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
