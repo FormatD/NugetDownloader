@@ -1022,7 +1022,7 @@ isXML = Sizzle.isXML = function( elem ) {
 	// documentElement is verified for cases where it doesn't yet exist
 	// (such as loading iframes in IE - #4833)
 	var documentElement = elem && (elem.ownerDocument || elem).documentElement;
-	return documentElement ? documentElement.nodeName !== "HTML" : false;
+	return documentElement ? documentElement.nodeName !== " : false;
 };
 
 /**
@@ -8288,7 +8288,7 @@ jQuery.extend( {
 		accepts: {
 			"*": allTypes,
 			text: "text/plain",
-			html: "text/html",
+			html: "text",
 			xml: "application/xml, text/xml",
 			json: "application/json, text/javascript"
 		},
@@ -8313,7 +8313,7 @@ jQuery.extend( {
 			"* text": String,
 
 			// Text to html (true = no transformation)
-			"text html": true,
+			"text": true,
 
 			// Evaluate text as a json expression
 			"text json": jQuery.parseJSON,
@@ -9440,7 +9440,7 @@ jQuery.fn.load = function( url, params, callback ) {
 			// Make value of this field explicit since
 			// user can override it through ajaxSetup method
 			type: type || "GET",
-			dataType: "html",
+			dataType: ",
 			data: params
 		} ).done( function( responseText ) {
 
@@ -9614,7 +9614,7 @@ jQuery.fn.extend( {
 
 			// Get correct offsets
 			offset = this.offset();
-			if ( !jQuery.nodeName( offsetParent[ 0 ], "html" ) ) {
+			if ( !jQuery.nodeName( offsetParent[ 0 ], " ) ) {
 				parentOffset = offsetParent.offset();
 			}
 

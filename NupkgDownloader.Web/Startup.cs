@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Multitenancy.Routing;
+using Microsoft.AspNetCore.Routing;
 
 namespace NupkgDownloader.Web
 {
@@ -87,9 +89,12 @@ namespace NupkgDownloader.Web
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseDeveloperExceptionPage();
+                //app.UseExceptionHandler("/Nupkg/Home/Error");
             }
-            app.UseStatusCodePagesWithRedirects("/Home/Error/");
+
+            app.UseStatusCodePages();
+            //app.UseStatusCodePagesWithRedirects("/Nupkg/Home/Error/");
 
 
             app.UseStaticFiles();
@@ -97,9 +102,23 @@ namespace NupkgDownloader.Web
 
             app.UseMvc(routes =>
             {
+                //routes.MapDomainRoute(
+                //    name: "default",
+                //    domainTemplate: "{xx}.newmsil.cn",
+                //    routeTemplate: "{controller=Home}/{action=Index}/{id?}"
+                //        );
+
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}",
+                    defaults: new RouteValueDictionary
+                    {
+                        {"area","Nupkg" }
+                    });
+
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area}/{controller=Home}/{action=Index}/{id?}");
             });
         }
 

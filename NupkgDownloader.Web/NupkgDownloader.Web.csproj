@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\SourceRepositoryExtensions.cs" />
+    <Compile Remove="Areas\Nupkg\Models\SourceRepositoryExtensions.cs" />
     <Compile Remove="SearchResult.cs" />
   </ItemGroup>
   
@@ -61,6 +61,28 @@
     <None Update="robots.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Template\Data\" />
+    <Folder Include="Areas\Template\Models\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Template\Views\Case\Index.cshtml" />
+    <None Include="Areas\Template\Views\Home\Index.cshtml" />
+    <None Include="Areas\Template\Views\jie\add.cshtml" />
+    <None Include="Areas\Template\Views\jie\detail.cshtml" />
+    <None Include="Areas\Template\Views\jie\index.cshtml" />
+    <None Include="Areas\Template\Views\User\Activate.cshtml" />
+    <None Include="Areas\Template\Views\User\Forget.cshtml" />
+    <None Include="Areas\Template\Views\User\Home.cshtml" />
+    <None Include="Areas\Template\Views\User\Index.cshtml" />
+    <None Include="Areas\Template\Views\User\Login.cshtml" />
+    <None Include="Areas\Template\Views\User\Message.cshtml" />
+    <None Include="Areas\Template\Views\User\Reg.cshtml" />
+    <None Include="Areas\Template\Views\User\Set.cshtml" />
   </ItemGroup>
 
 </Project>
