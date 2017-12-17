@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\Nupkg\Models\SourceRepositoryExtensions.cs" />
+    <Compile Remove="Areas\Default\Models\SourceRepositoryExtensions.cs" />
     <Compile Remove="SearchResult.cs" />
   </ItemGroup>
   
