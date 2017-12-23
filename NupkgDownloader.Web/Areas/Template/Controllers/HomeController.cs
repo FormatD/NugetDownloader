@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using NupkgDownloader.Web.Areas.Template.Models;
 
 namespace NupkgDownloader.Web.Areas.Template.Controllers
 {
@@ -11,11 +12,7 @@ namespace NupkgDownloader.Web.Areas.Template.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
-        public IActionResult Index1()
-        {
-            return View();
+            return View(Samples.Instance.HomeViewModel);
         }
 
     }

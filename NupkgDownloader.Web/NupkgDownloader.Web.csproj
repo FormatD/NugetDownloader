@@ -377,7 +377,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Template\Data\" />
-    <Folder Include="Areas\Template\Models\" />
     <Folder Include="Middleware\" />
   </ItemGroup>
 
