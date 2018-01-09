@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "基于 layui 的极简社区页面模版";
 }
+@model NupkgDownloader.Web.Areas.Template.Models.QuestionDetail
 
 <div class="layui-hide-xs">
   <div class="fly-panel fly-column">
@@ -35,7 +36,7 @@
   <div class="layui-row layui-col-space15">
     <div class="layui-col-md8 content detail">
       <div class="fly-panel detail-box">
-        <h1>Fly Template v3.0，基于 layui 的极简社区页面模版</h1>
+        <h1>@Model.Subject</h1>
         <div class="fly-detail-info">
           <!-- <span class="layui-badge">审核中</span> -->
           <span class="layui-badge layui-bg-green fly-detail-column">动态</span>
@@ -56,8 +57,8 @@
             <!-- <span class="layui-btn layui-btn-xs jie-admin" type="set" field="status" rank="0" style="background-color:#ccc;">取消加精</span> -->
           </div>
           <span class="fly-list-nums"> 
-            <a href="#comment"><i class="iconfont" title="回答">&#xe60c;</i> 66</a>
-            <i class="iconfont" title="人气">&#xe60b;</i> 99999
+            <a href="#comment"><i class="iconfont" title="回答">&#xe60c;</i> @Model.CommentCount</a>
+            <i class="iconfont" title="人气">&#xe60b;</i> @Model.ViewCount
           </span>
         </div>
         <div class="detail-about">

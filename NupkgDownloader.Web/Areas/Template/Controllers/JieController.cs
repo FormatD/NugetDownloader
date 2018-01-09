@@ -28,9 +28,9 @@ namespace NupkgDownloader.Web.Areas.Template.Controllers
             return View();
         }
 
-        public IActionResult Detail()
+        public IActionResult Detail(int id)
         {
-            return View();
+            return View(Samples.Instance.QuestionDetails.FirstOrDefault(x => x.Id == id));
         }
     }
 }

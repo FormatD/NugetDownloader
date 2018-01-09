@@ -45,6 +45,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BaiduAiSdk\BaiduAiSdk.csproj" />
     <ProjectReference Include="..\MailUtility\MailUtility.csproj" />
   </ItemGroup>
 
@@ -376,6 +377,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Default\Views\" />
     <Folder Include="Areas\Template\Data\" />
     <Folder Include="Middleware\" />
   </ItemGroup>

@@ -261,3 +261,4 @@ __pycache__/
 *.pyc
 /NupkgDownloader.Web/logs
 /NupkgDownloader.Web/test
+/NupkgDownloader.Web/cached_voice
