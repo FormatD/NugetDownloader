@@ -1,0 +1,38 @@
+.card-container {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+    .card .front {
+        margin: 2px;
+        background-color: aquamarine;
+        height: 146px;
+    }
+
+        .card .front .content {
+            margin: auto;
+            padding-top: 25px;
+            width: 100%;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        .card .front .toolbar {
+            position: relative;
+            height: 28px;
+            width: 100%;
+            bottom: 0px;
+            margin-left: 60px;
+        }
+
+    .card .end {
+        background-color: brown;
+    }

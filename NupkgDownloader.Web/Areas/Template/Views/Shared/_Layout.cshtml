@@ -10,6 +10,7 @@
     <meta name="description" content=@(ViewBag.Description ?? "Fly社区是模块化前端UI框架Layui的官网社区，致力于为web开发提供强劲动力")>
     <link rel="stylesheet" href="~/res/layui/css/layui.css">
     <link rel="stylesheet" href="~/res/css/global.css">
+    @RenderSection("Head", required: false)
 </head>
 <body>
     <div class="fly-header layui-bg-black">
@@ -25,16 +26,16 @@
                     <a href="/template/case"><i class="iconfont icon-iconmingxinganli"></i>案例</a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="http://www.layui.com/" target="_blank"><i class="iconfont icon-ui"></i>框架</a>
+                    <a href="/template/cardgame" ><i class="iconfont icon-ui"></i>Game</a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="/package"><i class="iconfont ios-cube"></i>Packages</a>
+                    <a href="/package"><i class="layui-icon" >&#xe60c;</i>Packages</a>
                 </li>
             </ul>
 
             <ul class="layui-nav fly-nav-user">
                 <!-- 登入后的状态 -->
-                <li class="layui-nav-item">
+                @*<li class="layui-nav-item">
                     <a class="fly-nav-avatar" href="javascript:;">
                         <cite class="layui-hide-xs">贤心</cite>
                         <i class="iconfont icon-renzheng layui-hide-xs" title="认证信息：layui 作者"></i>
@@ -48,7 +49,7 @@
                         <hr style="margin: 5px 0;">
                         <dd><a href="" style="text-align: center;">退出</a></dd>
                     </dl>
-                </li>
+                </li>*@
 
                 <!-- 未登入的状态 -->
                 <li class="layui-nav-item">
@@ -82,6 +83,9 @@
     </div>
 
     <script src="~/res/layui/layui.js"></script>
+ 
+    @RenderSection("Scripts", required: false)
+
     <script>
         layui.cache.page = 'user';
         layui.cache.user = {

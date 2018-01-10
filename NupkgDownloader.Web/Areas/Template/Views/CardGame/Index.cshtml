@@ -1,0 +1,108 @@
+﻿
+@section Head
+    {
+    <link rel="stylesheet" href="~/css/cardgame.css">
+}
+
+@section Scripts
+    {
+
+    <script id="demo" type="text/html">
+        <h3>{{ d.title }}</h3>
+        <ul>
+            {{#  layui.each(d.list, function(index, item){ }}
+            <li>
+                <span>{{ item.modname }}</span>
+                <span>{{ item.alias }}：</span>
+                <span>{{ item.site || '' }}</span>
+            </li>
+            {{#  }); }}
+            {{#  if(d.list.length === 0){ }}
+            无数据
+            {{#  } }}
+        </ul>
+    </script>
+
+    <script id="card" type="text/html">
+        {{#  layui.each(d.chars, function(index, item){ }}
+        <div class="card">
+            <div class="front">
+                <div class="content">
+                    {{ item }}
+                </div>
+                <div class="toolbar">
+                    <button class="layui-btn layui-btn-xs play-btn">
+                        <i class="layui-icon" style="font-size: 40px; color: rgb(235, 221, 222);">&#xe645; </i>
+                    </button>
+                </div>
+            </div>
+            <div class="end">
+
+            </div>
+        </div>
+        {{#  }); }}
+    </script>
+
+    <script>
+    layui.use('laytpl', function () {
+        var laytpl = layui.laytpl;
+
+        // //直接解析字符
+        // laytpl('{{ d.name }}是一位公猿').render({
+        //     name: '贤心'
+        // }, function (string) {
+        //     console.log(string); //贤心是一位公猿
+        // });
+
+        // //或者同步写法
+        // var string = laytpl('{{ d.name }}是一位公猿').render({
+        //     name: '贤心'
+        // });
+        // console.log(string);  //贤心是一位公猿
+
+        // //如果模板较大，你也可以采用数据的写法，这样会比较直观一些
+        // laytpl([
+        //     '{{ d.name }}是一位公猿'
+        //     , '其它字符 {{ d.content }}  其它字符'
+        // ].join(''))
+
+
+        //第三步：渲染模版
+        var data = { //数据
+            allChars: '的一是在不了有和人这中大为上个国我以要他时来用们生到作地于出就分对成会可主发年动同工也能下过子说产种面而方后多定行学法所民得经十三之进着等部度家电力里如水化高自二理起小物现实加量都两体制机当使点从业本去把性好应开它合还因由其些然前外天政四日那社义事平形相全表间样与关各重新线内数正心反你明看原又么利比或但质气第向道命此变条只没结解问意建月公无系军很情者最立代想已通并提直题党程展五果料象员革位入常文总次品式活设及管特件长求老头基资边流路级少图山统接知较将组见计别她手角期根论运农指几九区强放决西被干做必战先回则任取据处队南给色光门即保治北造百规热领七海口东导器压志世金增争济阶油思术极交受联什认六共权收证改清己美再采转更单风切打白教速花带安场身车例真务具万每目至达走积示议声报斗完类八离华名确才科张信马节话米整空元况今集温传土许步群广石记需段研界拉林律叫且究观越织装影算低持音众书布复容儿须际商非验连断深难近矿千周委素技备半办青省列习响约支般史感劳便团往酸历市克何除消构府称太准精值号率族维划选标写存候毛亲快效斯院查江型眼王按格养易置派层片始却专状育厂京识适属圆包火住调满县局照参红细引听该铁价严',
+            chars: []
+        }
+
+        for (let index = 0; index < 10; index++) {
+            data.chars.push(data.allChars.substr(index, 1));
+        }
+        var getTpl = card.innerHTML
+            , view = document.getElementById('view');
+
+        laytpl(getTpl).render(data, function (html) {
+            view.innerHTML = html;
+        });                 
+    });
+    layui.use('jquery', function () {
+        var $ = layui.jquery;
+
+        $('.play-btn').click(function () {
+            var text = $(this).parent().prev().html()
+            var audio = $("#bgMusic")[0];
+            audio.src = 'http://xxxx.newmsil.cn:5231/Speach/Play?text=' + text.trim()
+            //播放(继续播放)
+            audio.play();
+        });
+
+    });
+
+    </script>
+
+}
+
+<body>
+    <audio id="bgMusic">
+        <source src="/Speach/Play?text=test" type="audio/mp3">
+    </audio>
+    <div id="view" class="card-container"></div>
+</body>
