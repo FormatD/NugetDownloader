@@ -136,7 +136,7 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
             };
 
             var user = await _userManager.GetUserAsync(HttpContext.User);
-            if (user == null || string.IsNullOrWhiteSpace(user.Email))
+            if (user != null && !string.IsNullOrWhiteSpace(user.Email))
                 config.SendTo = user.Email;
 
             _logger.LogInformation("Sending {0} to {1}.", id, email);
