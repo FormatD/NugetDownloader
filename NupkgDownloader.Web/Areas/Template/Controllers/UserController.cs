@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity;
 
 namespace NupkgDownloader.Web.Areas.Template.Controllers
 {
     [Area("Template")]
-    public class UserController : Controller
+    public class UserController : BaseController
     {
+        public UserController(UserManager<ApplicationUser> userManager) : base(userManager)
+        {
+        }
+
         public IActionResult Index()
         {
             return View();

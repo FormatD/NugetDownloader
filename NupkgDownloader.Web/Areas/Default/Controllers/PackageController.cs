@@ -39,12 +39,7 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
         {
             _logger.LogInformation("Query Package with:{0}", keyword);
             keyword = keyword?.Trim() ?? string.Empty;
-            SourceRepository sourceRepository = CreateRepository();
-
-            PackageMetadataResource packageMetadataResource = await sourceRepository.GetResourceAsync<PackageMetadataResource>();
-
-            PackageSearchResource searchResource = await sourceRepository.GetResourceAsync<PackageSearchResource>();
-            var searchMetadata = await searchResource.SearchAsync(keyword, new SearchFilter(false), 0, 10, _nugetLogger, CancellationToken.None);
+            IEnumerable<IPackageSearchMetadata> searchMetadata = await SearchResult(keyword);
 
             var result = new SearchResultViewModel
             {
@@ -52,6 +47,25 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
                 Result = searchMetadata.Select(x => new PackageViewModel(x)),
             };
             return View(result);
+        }
+
+        private async Task<IEnumerable<IPackageSearchMetadata>> SearchResult(string keyword)
+        {
+            IEnumerable<IPackageSearchMetadata> searchMetadata = Enumerable.Empty<IPackageSearchMetadata>();
+            try
+            {
+                SourceRepository sourceRepository = CreateRepository();
+
+                PackageMetadataResource packageMetadataResource = await sourceRepository.GetResourceAsync<PackageMetadataResource>();
+
+                PackageSearchResource searchResource = await sourceRepository.GetResourceAsync<PackageSearchResource>();
+                searchMetadata = await searchResource.SearchAsync(keyword, new SearchFilter(false), 0, 10, _nugetLogger, CancellationToken.None);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Search packages fail,{0}", ex);
+            }
+            return searchMetadata;
         }
 
         async public Task<IActionResult> Detail(string id, string versionNo = null)

@@ -378,7 +378,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Default\Views\" />
     <Folder Include="Areas\Template\Data\" />
     <Folder Include="Middleware\" />
   </ItemGroup>
