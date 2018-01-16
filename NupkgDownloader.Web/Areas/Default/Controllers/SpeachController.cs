@@ -21,7 +21,7 @@ namespace NupkgDownloader.Web.Areas.Default.Controllers
             if (string.IsNullOrWhiteSpace(text))
                 return NotFound();
             var mp3File = speachService.Speach(text);
-            return File(System.IO.File.ReadAllBytes(mp3File), "audio/mp3", mp3File);
+            return File(System.IO.File.ReadAllBytes(mp3File), "audio/mpeg", mp3File);
         }
     }
 }

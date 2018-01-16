@@ -152,6 +152,7 @@ pre{padding: 10px 15px; margin: 10px 0; font-size: 12px; border-left: 6px solid 
 .fly-nav-msg{position:absolute; top: 50%; left: -25px; height: 20px; line-height: 20px; margin-top: -10px; padding:0 6px; background-color: #FF7200; color: #fff; border-radius: 2px;}
 .fly-nav-msg:hover{color:#fff;}
 
+ul.small-header {margin-left: 140px;}
 .fly-header .layui-nav{padding: 0; background: none;}
 .fly-header .fly-nav a{padding: 0 25px 0 60px;}
 .fly-header .fly-nav-user li a{padding: 0 10px;}
