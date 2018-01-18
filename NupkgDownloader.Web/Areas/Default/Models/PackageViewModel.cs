@@ -43,7 +43,7 @@ namespace NupkgDownloader.Web.Models
         public Uri IconUrl { get; }
         public long? DownloadCount { get; }
         public string Description { get; }
-        public IEnumerable<PackageDependencyGroup> DependencySets { get; }
+        public IEnumerable<PackageDependencyGroup> DependencySets { get; set; }
         public string Authors { get; }
         public string Id { get; }
         public Uri LicenseUrl { get; }

@@ -13,6 +13,8 @@ namespace NupkgDownloader.Web.Areas
 
         private readonly UserManager<ApplicationUser> _userManager;
 
+        protected ApplicationUser ApplicationUser { get; set; }
+
         public BaseController(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
@@ -20,7 +22,7 @@ namespace NupkgDownloader.Web.Areas
 
         public async override void OnActionExecuting(ActionExecutingContext context)
         {
-            ViewBag.User = await _userManager.GetUserAsync(HttpContext.User).ConfigureAwait(false);
+            ViewBag.User = ApplicationUser = await _userManager.GetUserAsync(HttpContext.User).ConfigureAwait(false);
             base.OnActionExecuting(context);
         }
     }

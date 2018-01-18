@@ -1,12 +1,15 @@
 ﻿
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NupkgDownloader.Web.Areas.Template.Models;
 using System;
 
 namespace NupkgDownloader.Web
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
     {
+        public DbSet<LearnRecord> LearnRecords { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -16,6 +19,7 @@ namespace NupkgDownloader.Web
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=db.db");
+            optionsBuilder.EnableSensitiveDataLogging();
         }
 
 

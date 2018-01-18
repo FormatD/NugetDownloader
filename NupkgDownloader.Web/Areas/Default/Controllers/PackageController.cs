@@ -94,7 +94,8 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
 
             var pacakgeViewModel = new PackageViewModel(packageMetaInfo)
             {
-                ReleatedPackages = reletedPackages
+                ReleatedPackages = reletedPackages,
+                DependencySets = dependencyInfo.DependencyGroups,
             };
 
             //var xxResource = sourceRepository.GetResource<DownloadResource>();

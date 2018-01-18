@@ -79,16 +79,41 @@
         <a class="btn btn-primary" asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-download-alt"></span>Download</a>
     </div>
     <div class="row">
-        <span>Other Versions</span>
-        <div class="pre-scrollable">
-            <ul class="list-group">
-                @foreach (var item in Model.ReleatedPackages)
-                {
-                    <li class="list-group-item">
-                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Identity.Id" asp-route-versionNo="@item.Identity.Version">@item.Identity</a>
-                    </li>
-                }
-            </ul>
+        <div class="col-md-6">
+            <span>Other Versions</span>
+            <div class="pre-scrollable ">
+                <ul class="list-group">
+                    @foreach (var item in Model.ReleatedPackages)
+                    {
+                        <li class="list-group-item">
+                            <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Identity.Id" asp-route-versionNo="@item.Identity.Version">@item.Identity</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <span>Dependency</span>
+            <div class="pre-scrollable ">
+                <ul class="list-group">
+                    @foreach (var item in Model.DependencySets)
+                    {
+                        <li class="list-group-item">
+                            <span>@item.TargetFramework.ToString()</span>
+
+                            <ul class="list-group">
+                                @foreach (var package in item.Packages)
+                                {
+                                    <li class="list-group-item">
+                                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@package.Id" asp-route-versionNo="">@package.Id - @package.VersionRange</a>
+                                    </li>
+                                }
+
+                            </ul>
+                        </li>
+                    }
+                </ul>
+            </div>
         </div>
     </div>
 </div>
