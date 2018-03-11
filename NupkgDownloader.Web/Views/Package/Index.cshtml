@@ -4,7 +4,7 @@
 }
 
 <style>
-    .table tbody td img {
+    .layui-table tbody td img {
         max-width: 40px;
         max-height: 40px;
     }
@@ -13,17 +13,18 @@
 
 @using (Html.BeginForm(FormMethod.Get))
 {
-
-    <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8">
-            <input class="form-control" type="text" name="keyword" value="@Model.Keyword" />
+    <div class="search-container layui-row layui-form">
+        <div class="layui-col-lg10 layui-col-md10 layui-col-sm10 layui-col-xs10">
+            <input class="layui-input" placeholder="please input keyword of packages" type="text" name="keyword" value="@Model.Keyword" />
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <input class="btn btn-primary" type="submit" value="Query" />
+        <div class="layui-col-lg2 layui-col-md2 layui-col-sm2 layui-col-xs2">
+            <button class="layui-btn layui-btn-primary" type="submit">
+                <i class="layui-icon">&#xe615;</i> Query
+            </button>
         </div>
     </div>
 
-    <table class="table">
+    <table class="layui-table">
         <thead>
             <tr>
                 <th></th>
@@ -36,19 +37,18 @@
             @foreach (var item in Model.Result)
                 {
                 <tr>
-                <td><img src="@item.IconUrl" /></td>
-                <td>
-                    <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">@item.Title</a>
-                </td>
-                <td>@item.DownloadCount</td>
-                <td>@item.Description</td>
-                <td>
-                    <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">Detail</a>
-                    <a asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@item.Id">Send via Email</a>
-                    <a asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@item.Id" asp-route-versionNo="123">Download</a>
-                    <a target="_blank" href="@item.ProjectUrl">Project</a>
-                </td>
-            </tr>
+                    <td><img src="@item.IconUrl" /></td>
+                    <td>
+                        <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@item.Id">@item.Title</a>
+                    </td>
+                    <td>@item.DownloadCount</td>
+                    <td>@item.Description</td>
+                    <td>
+                        <a asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@item.Id">Send via Email</a>  <br />
+                        <a asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@item.Id" asp-route-versionNo="123">Download</a><br />
+                        <a target="_blank" href="@item.ProjectUrl">Project</a><br />
+                    </td>
+                </tr>
             }
         </tbody>
     </table>

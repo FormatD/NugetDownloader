@@ -1022,7 +1022,7 @@ isXML = Sizzle.isXML = function( elem ) {
 	// documentElement is verified for cases where it doesn't yet exist
 	// (such as loading iframes in IE - #4833)
 	var documentElement = elem && (elem.ownerDocument || elem).documentElement;
-	return documentElement ? documentElement.nodeName !== " : false;
+	return documentElement ? documentElement.nodeName !== "" : false;
 };
 
 /**
@@ -9440,7 +9440,7 @@ jQuery.fn.load = function( url, params, callback ) {
 			// Make value of this field explicit since
 			// user can override it through ajaxSetup method
 			type: type || "GET",
-			dataType: ",
+			dataType: "",
 			data: params
 		} ).done( function( responseText ) {
 
@@ -9614,7 +9614,7 @@ jQuery.fn.extend( {
 
 			// Get correct offsets
 			offset = this.offset();
-			if ( !jQuery.nodeName( offsetParent[ 0 ], " ) ) {
+			if ( !jQuery.nodeName( offsetParent[ 0 ], "" ) ) {
 				parentOffset = offsetParent.offset();
 			}
 

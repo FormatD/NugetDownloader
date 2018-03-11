@@ -1,0 +1,11 @@
+﻿{
+  "SendFrom": "314907119@qq.com",
+  "SendTo": "dengqianjun@huawei.com",
+  "MaxSize": 9000000,
+  "SmtpServerAddress": "smtp.qq.com",
+  "SmtpServerPort": 587,
+  "UserName": "314907119@qq.com",
+  "UserPass": "hiwdgwugswpybhfg",
+  "PackagesSavePath": "D:\\Microsoft.Nuget.Packages\\",
+  "MaxSendQueueCount": 4
+}

@@ -21,6 +21,10 @@
     <Compile Remove="Areas\Default\Models\SourceRepositoryExtensions.cs" />
     <Compile Remove="SearchResult.cs" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="mail_config.json" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0" PrivateAssets="All" />

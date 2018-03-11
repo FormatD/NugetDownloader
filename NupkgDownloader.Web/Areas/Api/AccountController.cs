@@ -14,6 +14,7 @@ using System.Net.Http;
 namespace NupkgDownloader.Web
 {
     [Route("api/[controller]")]
+    [Area("api")]
     public class AccountController : Controller
     {
 
@@ -43,7 +44,7 @@ namespace NupkgDownloader.Web
             if (result.Succeeded)
             {
                 _logger.LogInformation("User logged in.");
-                return Json(new { status = 0, data = new[] { "" } ,action="/"});
+                return Json(new { status = 0, data = new[] { "" }, action = "/" });
             }
             if (result.RequiresTwoFactor)
             {
@@ -66,36 +67,57 @@ namespace NupkgDownloader.Web
             // If we got this far, something failed, redisplay form
         }
 
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
         [HttpPost]
-        public void Post([FromBody]string value)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
         {
+            await _signInManager.SignOutAsync();
+            _logger.LogInformation("User logged out.");
+            return Json(new { status = 0, msg = "Logouted." });
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
-        }
+            ViewData["ReturnUrl"] = returnUrl;
+            if (ModelState.IsValid)
+            {
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if (result.Succeeded)
+                {
+                    _logger.LogInformation("User created a new account with password.");
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                    // mail
+                    //var callbackUrl = Url.EmailConfirmationLink(user.Id, code, Request.Scheme);
+                    //await _emailSender.SendEmailConfirmationAsync(model.Email, callbackUrl);
+
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    _logger.LogInformation("User created a new account with password.");
+
+                    return Json(new
+                    {
+                        status= 0,
+                        returnUrl,
+                    });
+                }
+
+                return Json(new
+                {
+                    status = 0,
+                    error = result,
+                });
+            }
+
+            return Json(new
+            {
+                status = 0,
+                error = ModelState,
+            });
         }
     }
 }

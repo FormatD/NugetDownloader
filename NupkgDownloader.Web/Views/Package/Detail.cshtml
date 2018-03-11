@@ -75,8 +75,8 @@
     </div>
 
     <div class="row form-group">
-        <a class="btn btn-primary" asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-envelope"></span>Send via Email</a>
-        <a class="btn btn-primary" asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-download-alt"></span>Download</a>
+        <a class="btn btn-primary button-send-via-mail" data-package-id="@Model.Id" data-package-version="@Model.CurrentVersion" asp-area="" asp-controller="Package" asp-action="Send" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-envelope"></span>Send via Email</a>
+        <a class="btn btn-primary button-download" data-package-id="@Model.Id" data-package-version="@Model.CurrentVersion" asp-area="" asp-controller="Package" asp-action="Download" asp-route-id="@Model.Id" asp-route-versionNo="@Model.CurrentVersion"><span class="glyphicon glyphicon glyphicon-download-alt"></span>Download</a>
     </div>
     <div class="row">
         <div class="col-md-6">
@@ -108,7 +108,6 @@
                                         <a asp-area="" asp-controller="Package" asp-action="Detail" asp-route-id="@package.Id" asp-route-versionNo="">@package.Id - @package.VersionRange</a>
                                     </li>
                                 }
-
                             </ul>
                         </li>
                     }
@@ -120,3 +119,31 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+@section Scripts
+    {
+    <script>
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            var jQuery = layui.jquery;
+
+            jQuery('.button-send-via-mail').click(function () {
+                var id = jQuery(this).data('package-id');
+                var version = jQuery(this).data('package-version');
+                jQuery.post('/Package/Send/' + id, {}, function (data, textStatus, jqXhr) {
+                    layer.msg(JSON.stringify(data));
+                }).fail(function (response) {
+                    if (response.status) {
+                        layer.msg('Error: ' + 'Pls login first.');
+                    }
+                });
+
+                return false;
+            });
+        });
+
+        //jQuery(function () {
+
+        //});
+    </script>
+}

@@ -8,17 +8,16 @@ using NuGet.Protocol;
 using NuGet.Configuration;
 using System.Threading;
 using NupkgDownloader.Web.Models;
-using NuGet.Frameworks;
 using NuGet.Versioning;
 using MailUtility;
 using System.IO;
 using NuGet.Packaging.Core;
-//using ILogger = Microsoft.Extensions.Logging.ILogger;
 using Microsoft.Extensions.Logging;
-using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using NupkgDownloader.Web.NupkgControllers;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Hosting;
 
 namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
 {
@@ -27,11 +26,17 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
         LoggerWrapper<PackageController> _nugetLogger;
         private readonly ILogger<PackageController> _logger;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly string _downloadFolder = "nupkg_cache";
 
-        public PackageController(UserManager<ApplicationUser> userManager, ILogger<PackageController> logger)
+        public PackageController(UserManager<ApplicationUser> userManager,
+            ILogger<PackageController> logger,
+            IHostingEnvironment hostingEnvironment)
         {
             _logger = logger;
             _userManager = userManager;
+            _hostingEnvironment = hostingEnvironment;
+
             _nugetLogger = new LoggerWrapper<PackageController>(_logger);
         }
 
@@ -115,14 +120,22 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
             var metadataResource = await sourceRepository.GetResourceAsync<MetadataResource>();
             var version = !string.IsNullOrWhiteSpace(versionNo) ? new NuGetVersion(versionNo) : await GetVersion(id, metadataResource);
 
-            var xxResource = sourceRepository.GetResource<DownloadResource>();
-            var identity = new PackageIdentity(id, version);
-            var downloadRsult = await xxResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), "test", _nugetLogger, CancellationToken.None);
+            var lowCaseId = id.ToLower();
+            var fileName = Path.Combine(_downloadFolder, lowCaseId, version.ToString(), $"{lowCaseId}.{version}.nupkg");
+            if (!System.IO.File.Exists(fileName))
+            {
+                var xxResource = sourceRepository.GetResource<DownloadResource>();
+                var identity = new PackageIdentity(id, version);
+                var downloadRsult = await xxResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), _downloadFolder, _nugetLogger, CancellationToken.None);
 
-            if (downloadRsult.Status == DownloadResourceResultStatus.NotFound)
-                return NotFound();
-
-            return File(downloadRsult.PackageStream, "application/x-nuget", $"{id}.{version}.nupkg");
+                if (downloadRsult.Status == DownloadResourceResultStatus.NotFound)
+                    return NotFound();
+                return File(downloadRsult.PackageStream, "application/x-nuget", $"{id}.{version}.nupkg");
+            }
+            else
+            {
+                return File(Path.Combine(_hostingEnvironment.WebRootPath, fileName), "application/x-nuget", $"{id}.{version}.nupkg");
+            }
         }
 
         [Authorize]
@@ -133,34 +146,38 @@ namespace NupkgDownloader.Web.Areas.Nupkg.Controllers
             var metadataResource = await sourceRepository.GetResourceAsync<MetadataResource>();
             var version = !string.IsNullOrWhiteSpace(versionNo) ? new NuGetVersion(versionNo) : await GetVersion(id, metadataResource);
 
-            var downloadResource = sourceRepository.GetResource<DownloadResource>();
-            var identity = new PackageIdentity(id, version);
-            var downloadRsult = await downloadResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), "test", _nugetLogger, CancellationToken.None);
-
-            if (downloadRsult.Status == DownloadResourceResultStatus.NotFound)
-                return NotFound();
-            var config = new Config
+            var lowCaseId = id.ToLower();
+            var fileName = Path.Combine(_downloadFolder, lowCaseId, version.ToString(), $"{lowCaseId}.{version}.nupkg");
+            if (!System.IO.File.Exists(fileName))
             {
-                SendFrom = "314907119@qq.com",
-                SendTo = "dengqianjun@huawei.com",
-                MaxSize = 9000000,
-                SmtpServerAddress = "smtp.qq.com",
-                SmtpServerPort = 587,
-                UserName = "314907119@qq.com",
-                UserPass = "hiwdgwugswpybhfg"
-            };
+                var downloadResource = sourceRepository.GetResource<DownloadResource>();
+                var identity = new PackageIdentity(id, version);
+                var downloadRsult = await downloadResource.GetDownloadResourceResultAsync(identity, new PackageDownloadContext(new SourceCacheContext()), _downloadFolder, _nugetLogger, CancellationToken.None);
 
-            var user = await _userManager.GetUserAsync(HttpContext.User);
+                if (downloadRsult.Status == DownloadResourceResultStatus.NotFound)
+                {
+                    return Json(new
+                    {
+                        Id = id,
+                        Version = versionNo,
+                        IsSuccessed = false,
+                        Message = "Not Found",
+                    });
+                }
+            }
+
+            var config = JsonConvert.DeserializeObject<Config>(System.IO.File.ReadAllText("mail_config.json"));
+
+            var user = await _userManager.GetUserAsync(HttpContext.User).ConfigureAwait(false);
             if (user != null && !string.IsNullOrWhiteSpace(user.Email))
                 config.SendTo = user.Email;
 
             _logger.LogInformation("Sending {0} to {1}.", id, email);
             //var basePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            var lowCaseId = id.ToLower();
-            new MailSender(config, _logger).SendEmail(Path.Combine("test", lowCaseId, version.ToString(), $"{lowCaseId}.{version}.nupkg"), $"[Nuget]{lowCaseId} {version}");
+            new MailSender(config, _logger).SendEmail(fileName, $"[Nuget]{lowCaseId} {version}");
             _logger.LogInformation("package sended.");
-            return View(new SendViewModel
+            return Json(new SendViewModel
             {
                 Id = id,
                 Version = version.Version.ToString(),

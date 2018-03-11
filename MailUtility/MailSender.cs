@@ -159,7 +159,7 @@ namespace MailUtility
 
         private MailMessage CreateMessage(string file, string subject = null)
         {
-            MailMessage message = new MailMessage()
+            var message = new MailMessage()
             {
                 From = new MailAddress(_config.SendFrom),
                 Sender = new MailAddress(_config.SendFrom),
@@ -169,10 +169,13 @@ namespace MailUtility
 
             foreach (var mailAddress in _config.SendTo.Split(';'))
             {
-                message.To.Add(new MailAddress(mailAddress, "Deng qianjun"));
+                message.To.Add(new MailAddress(mailAddress, mailAddress));
             }
 
-            Attachment data = new Attachment(file, MediaTypeNames.Application.Octet);
+            var data = new Attachment(file, MediaTypeNames.Application.Octet)
+            {
+                Name = Path.GetFileName(file)
+            };
             var disposition = data.ContentDisposition;
             disposition.CreationDate = File.GetCreationTime(file);
             disposition.ModificationDate = File.GetLastWriteTime(file);
